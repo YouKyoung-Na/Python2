@@ -17,3 +17,4 @@ for i, j in time:
         last = j  #time 리스트 안의 회의 마지막 시간을 last에 대입
 
 print(cnt)
+
