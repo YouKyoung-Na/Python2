@@ -1,22 +1,8 @@
-from collections import Counter
+while(True):
+    n= input()
+    if n == '0': break
 
-n= int(input())
-data = [int(a) for a in str(n)]
-data_r = data.reverse()
-data_cnt = Counter(data)
-
-
-for i in data_cnt:
-    if data_cnt[i]%2 != 0:  #홀수
-        data.remove([len(data)/2])
-        data_r.remove([len(data)/2])
-        if(data[i]==data_r[i]):
-            print('yes')
-        else:
-            print('no')
-
+    elif n == n[::-1]: #짝수
+        print('yes')
     else:
-        if(data[i]==data_r[i]):
-            print('yes')
-        else:
-            print('no')
+        print('no')
